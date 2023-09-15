@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag atlantis:$(date +%s)
+      run: docker build atlantis/ --file Dockerfile --tag atlantis:$(date +%s)
